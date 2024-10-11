@@ -1,1 +1,131 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporting and Exporting Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            margin: 20px 0;
+        }
+
+        section {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #28A745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Reporting and Exporting Tool</h1>
+    </header>
+    <main>
+        <section id="reporting">
+            <h2>Generate Report</h2>
+            <form id="reportForm">
+                <label for="reportType">Select Report Type:</label>
+                <select id="reportType">
+                    <option value="sales">Sales Report</option>
+                    <option value="inventory">Inventory Report</option>
+                    <option value="user">User Report</option>
+                </select>
+                <button type="submit">Generate Report</button>
+            </form>
+        </section>
+
+        <section id="exporting">
+            <h2>Export Data</h2>
+            <form id="exportForm">
+                <label for="exportFormat">Select Export Format:</label>
+                <select id="exportFormat">
+                    <option value="csv">CSV</option>
+                    <option value="excel">Excel</option>
+                    <option value="pdf">PDF</option>
+                </select>
+                <button type="submit">Export Data</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Reporting Tool. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('reportForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const reportType = document.getElementById('reportType').value;
+            console.log(`Generating ${reportType}...`);
+            alert(`Generating ${reportType}...`);
+        });
+
+        document.getElementById('exportForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const exportFormat = document.getElementById('exportFormat').value;
+            console.log(`Exporting as ${exportFormat}...`);
+            alert(`Exporting as ${exportFormat}...`);
+        });
+    </script>
+</body>
+</html>
