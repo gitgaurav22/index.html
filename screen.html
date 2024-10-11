@@ -1,0 +1,79 @@
+<!-- Header Section -->
+<header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Export</a></li>
+      </ul>
+    </nav>
+    <div class="user-profile">
+      <img src="user-avatar.png" alt="User Avatar">
+      <span>John Doe</span>
+    </div>
+  </header>
+  
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <h2>Filter Options</h2>
+    <form>
+      <label for="date-range">Date Range:</label>
+      <input type="date" id="date-range" name="date-range">
+      <label for="categories">Categories:</label>
+      <select id="categories" name="categories">
+        <option value="">Select Category</option>
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
+      </select>
+      <label for="metrics">Metrics:</label>
+      <select id="metrics" name="metrics">
+        <option value="">Select Metric</option>
+        <option value="metric1">Metric 1</option>
+        <option value="metric2">Metric 2</option>
+      </select>
+      <button type="submit">Apply Filters</button>
+    </form>
+  </section>
+  
+  <!-- Report Section -->
+  <section class="report-section">
+    <h2>Reports</h2>
+    <ul id="report-list">
+      <li>
+        <a href="#">Report 1</a>
+        <span>Created on: 2022-01-01</span>
+      </li>
+      <li>
+        <a href="#">Report 2</a>
+        <span>Created on: 2022-01-05</span>
+      </li>
+      <li>
+        <a href="#">Create New Report</a>
+      </li>
+    </ul>
+  </section>
+  
+  <!-- Export Section -->
+  <section class="export-section">
+    <h2>Export Options</h2>
+    <form>
+      <label for="export-format">Export Format:</label>
+      <select id="export-format" name="export-format">
+        <option value="csv">CSV</option>
+        <option value="pdf">PDF</option>
+        <option value="json">JSON</option>
+      </select>
+      <label for="export-columns">Select Columns:</label>
+      <select id="export-columns" name="export-columns" multiple>
+        <option value="column1">Column 1</option>
+        <option value="column2">Column 2</option>
+        <option value="column3">Column 3</option>
+      </select>
+      <button type="submit">Export</button>
+    </form>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer>
+    <p>Copyright 2022. All rights reserved.</p>
+  </footer>
